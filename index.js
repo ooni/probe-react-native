@@ -1,6 +1,8 @@
 import React from 'react';
 import {AppRegistry, StyleSheet, Text, View} from 'react-native';
 
+import About from './views/About'
+
 class HelloWorld extends React.Component {
   render() {
     return (
@@ -23,3 +25,4 @@ var styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('HelloWorld', () => HelloWorld);
+AppRegistry.registerComponent('About', () => About)
