@@ -9,20 +9,6 @@ import {
   Linking
 } from 'react-native'
 
-/*
-Hero
-  LOGO
-  ooniprobe version
-  mk version
-
-  about paragraph
-  button blue
-    link to learn more
-  button link
-    link to data policy
-
-*/
-
 const HeroText = (props) => (
   <Text style={{
     textAlign: 'center',
@@ -33,8 +19,8 @@ const HeroText = (props) => (
 )
 
 const About = ({
-  ooniprobeVersion = '2.2.0',
-  mkVersion = '0.10.6'
+  ooniprobeVersion,
+  mkVersion
 }) => {
   return (
     <View>
@@ -43,6 +29,7 @@ const About = ({
         backgroundColor: '#0588CB',
         justifyContent: 'center'
       }}>
+        {/* TODO: Insert LOGO here */}
         <HeroText>{`ooniprobe: ${ooniprobeVersion}`}</HeroText>
         <HeroText>{`measurement-kit: ${mkVersion}`}</HeroText>
       </View>
