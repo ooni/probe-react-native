@@ -1,5 +1,7 @@
-import React from 'react';
-import {AppRegistry, StyleSheet, Text, View} from 'react-native';
+import React from 'react'
+import {AppRegistry, StyleSheet, Text, View} from 'react-native'
+
+import About from './views/About'
 
 class HelloWorld extends React.Component {
   render() {
@@ -7,7 +9,7 @@ class HelloWorld extends React.Component {
       <View style={styles.container}>
         <Text style={styles.hello}>Hello, World</Text>
       </View>
-    );
+    )
   }
 }
 var styles = StyleSheet.create({
@@ -20,6 +22,7 @@ var styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
-});
+})
 
-AppRegistry.registerComponent('HelloWorld', () => HelloWorld);
+AppRegistry.registerComponent('HelloWorld', () => HelloWorld)
+AppRegistry.registerComponent('About', () => About)
